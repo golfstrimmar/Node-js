@@ -1,0 +1,16 @@
+header.header
+    .container
+        .header__body
+            .header__logo
+                p Node & Express
+            nav.header__nav
+                a( href="/") HOME
+                a( href="/about") ABOUT
+            form.search-field(method='post' action='/check-user')
+                input#search1(type='text' placeholder='search' name='username' )
+                label(for='search1') search
+                .search-field__submit
+                    input(type='submit')
+                    svg
+                        use(xlink:href='#search')
+include ../assets/sprite.svg

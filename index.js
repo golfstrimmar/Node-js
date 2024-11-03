@@ -29,18 +29,23 @@
 //     "</body>\n" +
 //     "</html>",
 // );
-// const stream = fs.createReadStream("./templates/index.html");
+// const stream = fs.createReadStream("./views/index.pug");
 // stream.pipe(res);
-const fs = require("fs");
-const http = require("http");
-let server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-  if (req.url == "/") fs.createReadStream("./templates/index.html").pipe(res);
-  else if (req.url == "/about")
-    fs.createReadStream("./templates/about.html").pipe(res);
-});
-const PORT = 3000;
-const HOST = "localhost";
-server.listen(PORT, HOST, () => {
-  console.log(`server: http://${HOST}:${PORT}`);
-});
+// =====
+// const fs = require("fs");
+// const http = require("http");
+// let server = http.createServer((req, res) => {
+//   res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+//   if (req.url == "/") fs.createReadStream("./views/index.pug").pipe(res);
+//   else if (req.url == "/about")
+//     fs.createReadStream("./views/about.pug").pipe(res);
+// });
+// const PORT = 3000;
+// const HOST = "localhost";
+// server.listen(PORT, HOST, () => {
+//   console.log(`server: http://${HOST}:${PORT}`);
+// });
+// =====================
+import Exp from "./exp.js";
+
+Exp();

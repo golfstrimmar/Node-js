@@ -1,0 +1,43 @@
+@import '../common/null.scss';
+@import '../common/mixins.scss';
+@import '../common/colors.scss';
+@import '../common/common.scss';
+@import '../common/fonts.scss';
+@import '../common/btn.scss';
+@import '../common/btn-success.scss';
+@import '../common/btn-empty.scss';
+@import '../common/btn-blue.scss';
+@import '../common/input-field.scss';
+@import '../common/search-field.scss';
+@import '../common/typography.scss';
+@import '../components/header.scss';
+
+
+$bg-color: blue;
+$header-color: red;
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  row-gap: 2em;
+  font-size: 18px;
+}
+
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 5px;
+  
+  li {
+    color: chocolate;
+  }
+}
+
+
+
+
